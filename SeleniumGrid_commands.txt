@@ -1,0 +1,14 @@
+http://192.168.43.187:4444/grid/register
+
+
+1)java -jar selenium-server-standalone-3.1.0.jar -role hub
+
+1) To register a node with chrome
+java -jar -Dwebdriver.chrome.driver=D:/chromedriver.exe selenium-server-standalone-2.52.0.jar -role webdriver -hub http://192.168.43.187:4444/grid/register -port 7777
+
+3) To reguister a node with firefox
+java -jar -Dwebdriver.gecko.driver=D:/geckodriver.exe selenium-server-standalone-2.52.0.jar -role webdriver -hub http://192.168.43.187:4444/grid/register -port 7777
+
+4)To gerister a node by giving no of instances
+java -jar -Dwebdriver.gecko.driver=D:/geckodriver.exe selenium-server-standalone-2.52.0.jar -role webdriver -hub http://192.168.43.187:4444/grid/register -port 9999 
+-browser browserName="firefox",maxInstances=3,maxSession=3
